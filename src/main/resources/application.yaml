@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/roommate
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    locations: classpath:/db/migration
+    enabled: true
+    url: jdbc:postgresql://db:5432/roommate
+    user: postgres
+    password: postgres
